@@ -1,7 +1,7 @@
 <div class="craft-calculator">
   <%= form_tag(root_path, method: :get, remote: true, class: 'form-inline') do %>
-    <%= label_tag(:skill, "Skill:") %>
-    <%= select_tag(:skill, options_for_select(skill_names, params[:skill]), :include_blank => true, :id => :skill) %>
+    <%#= label_tag(:skill, "Skill:") %>
+    <%#= select_tag(:skill, options_for_select(skill_names, params[:skill]), :include_blank => true, :id => :skill) %>
 
     <%= label_tag(:query, "Search:") %>
     <%= text_field_tag(:query, params[:query], :id => :query) %>
